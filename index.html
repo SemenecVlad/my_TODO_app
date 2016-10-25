@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="wrapper">
+      <header>
+        <span>My TODO task manager</span>
+      </header>
+      <main>
+
+        <ul id="myTaskList">
+          <li class="checked">Test Task</li>
+        </ul>
+
+        <div class="inputToDo">
+          <input type="text" title="Write your task here!"id="myTaskInput" placeholder="Enter your task here...">
+		  <input type="text" title="Choose the date from calendar below!" id="datepicker" placeholder="Enter your deadline here...">
+          <input type="submit" value="Add Task" onclick="newTask()" class="addTask">
+        </div>
+		<div class="count"></div>
+      </main>
+    </section>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

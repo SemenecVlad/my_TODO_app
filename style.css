@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(img/tuman.png) repeat-x 0 100% fixed,
+  url(img/tuman.png) no-repeat fixed,
+  linear-gradient(to top, #110e3c, #111) fixed;
+  font-family: Raleway, sans-serif;
+  animation: tuman 90s linear infinite;
+}
+@keyframes tuman {
+	from {background-position: 1800px 0%, 20% 110%, 0 0;}
+	to {background-position: -1000 100%, -60% 200%, 0 0;}
+}
+section.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  top: 40px;
+  box-shadow: 0 0px 8px #333;
+}
+
+header {
+  height: 80px;
+  background-color: #6afba7;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+header > span {
+  position: relative;
+  top: 15px;
+}
+.inputToDo {
+	margin-top: 20px;
+	background-color: #f2f2f2;
+}
+input {
+  width: 47.5%;
+  padding: 10px;
+  border: 1px solid #6afba7;
+  margin-top: 12px;
+  margin-left: 15px;
+  outline: none;
+}
+input[type="submit"] {
+	width: 97.5%;
+	margin-bottom: 15px;
+}
+input:focus {
+  box-shadow: 0 0 2px #4bc77f;
+}
+/*Style for Add button*/
+.addTask {
+  background-color: #6afba7;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.addTask:hover {
+  background-color: #5fe196;
+  transition: 0.3s;
+  border: 1px solid #5fe196;
+}
+
+/*Style for tasks list*/
+ul {
+  margin: 15px 14px 0px 14px;
+  padding: 0;
+  list-style-type: none;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 10px 10px 40px;
+  background-color: #fef1f0;
+  margin-bottom: 5px;
+  display: block;
+}
+ul li:hover {
+  background-color: #fdd3cd;
+}
+ul li.checked {
+  background: #c3fddb;
+  text-decoration: line-through;
+}
+ul li.checked .date {
+	color: #54c885;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+ul li.checked:before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 12px;
+  width: 5px;
+}
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 25px;
+    padding: 4px 13px 6px 13px;
+	transition: 0.3s;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+	transition: 0.3s;
+}
+.date {
+	position: absolute;
+    right: 40px;
+    top: 0;
+	color: #fa9283;
+	font-weight: bold;
+    padding: 10px 13px 6px 13px;
+	transition: 0.3s;
+}
