@@ -1,3 +1,2 @@
-//*
-* This folder contain images, that used in background.
-*//
+### This folder contain images, that used in background.
+
