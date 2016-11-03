@@ -1,6 +1,11 @@
-// Close button
+/**
+*@name ToDo module
+*@description Creating simple ToDo application. Some functions will be added later
+*@author Vladislav Semenets <semenecvlad@mail.ru>
+*/
+
 "use strict";
-//Create Close button
+/**@description Creating 'Close' button for all elements added in list*/
 var elemList = document.getElementsByTagName("li");
 for( var i = 0; i < elemList.length; i++ )
 {
@@ -10,7 +15,7 @@ for( var i = 0; i < elemList.length; i++ )
   closeContainer.appendChild(closeSymbol);
   elemList[i].appendChild(closeContainer);
 }
-//On click - delete Task
+/**@description Define OnClick handler on 'Close' that will delete element*/
 var closeButton = document.getElementsByClassName("close");
 for( var i = 0; i < closeButton.length; i++)
 {
@@ -20,7 +25,7 @@ for( var i = 0; i < closeButton.length; i++)
     parent.style.display = "none";
   }
 }
-//On click LI-element we add or delete checked-class
+/**@description On click LI-element we add or delete checked-class */
 var ulList = document.querySelector("ul");
 ulList.addEventListener("click", function(ev)
   {
@@ -30,7 +35,11 @@ ulList.addEventListener("click", function(ev)
     }
   }, false);
 
-//Create New Task
+/**
+*@function
+*@name newTask
+*@description Create New Task 
+*/
   function newTask()
   {
     var li = document.createElement("li");
@@ -74,7 +83,7 @@ ulList.addEventListener("click", function(ev)
     }
   }
   
-  //Sending form data with Enter
+//Sending form data with Enter
   document.onkeyup = function (e) {
 	    e = e || window.event;
 	    if (e.keyCode === 13) {
@@ -83,7 +92,7 @@ ulList.addEventListener("click", function(ev)
 	    // Cancels the effect of the browser
 	    return false;
 	}
-	// Include JQuery UI Datepicker with the date formatting
+// Include JQuery UI Datepicker with the date formatting
   $( function() {
     $( "#datepicker" ).datepicker({dateFormat:'dd MM yy'});
   } );
