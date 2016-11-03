@@ -5,7 +5,9 @@
 */
 
 "use strict";
+
 /**@description Creating 'Close' button for all elements added in list*/
+
 var elemList = document.getElementsByTagName("li");
 for( var i = 0; i < elemList.length; i++ )
 {
@@ -15,7 +17,9 @@ for( var i = 0; i < elemList.length; i++ )
   closeContainer.appendChild(closeSymbol);
   elemList[i].appendChild(closeContainer);
 }
+
 /**@description Define OnClick handler on 'Close' that will delete element*/
+
 var closeButton = document.getElementsByClassName("close");
 for( var i = 0; i < closeButton.length; i++)
 {
@@ -25,7 +29,9 @@ for( var i = 0; i < closeButton.length; i++)
     parent.style.display = "none";
   }
 }
+
 /**@description On click LI-element we add or delete checked-class */
+
 var ulList = document.querySelector("ul");
 ulList.addEventListener("click", function(ev)
   {
