@@ -13,8 +13,8 @@ html, body {
   padding: 0;
 }
 body {
-  background: url(img/tuman.png) repeat-x 0 100% fixed,
-  url(img/tuman.png) no-repeat fixed,
+  background: url(../img/tuman.png) repeat-x 0 100% fixed,
+  url(.//img/tuman.png) no-repeat fixed,
   linear-gradient(to top, #110e3c, #111) fixed;
   font-family: Raleway, sans-serif;
   animation: tuman 90s linear infinite;
