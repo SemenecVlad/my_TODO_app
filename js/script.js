@@ -21,7 +21,7 @@ for( var i = 0; i < elemList.length; i++ )
 /**@description Define OnClick handler on 'Close' that will delete element*/
 
 var closeButton = document.getElementsByClassName("close");
-for( var i = 0; i < closeButton.length; i++)
+for( var i = 0; i < closeButton.length; i++ )
 {
   closeButton[i].onclick = function()
   {
@@ -56,7 +56,7 @@ ulList.addEventListener("click", function(ev)
 	
     if ( inputTaskValue === "" || datepickerValue === "")
     {
-      alert( "Please write some task!");
+      alert("Please write some task!");
     }
     else
     {
@@ -79,7 +79,7 @@ ulList.addEventListener("click", function(ev)
 	deadline.className = "date";
 	li.appendChild(deadline);
 	
-    for (var i = 0; i < closeButton.length; i++)
+    for ( var i = 0; i < closeButton.length; i++ )
     {
       closeButton[i].onclick = function()
       {
@@ -90,7 +90,7 @@ ulList.addEventListener("click", function(ev)
   }
   
 //Sending form data with Enter
-  document.onkeyup = function (e) {
+  document.onkeyup = function(e) {
 	    e = e || window.event;
 	    if (e.keyCode === 13) {
 	        newTask();
